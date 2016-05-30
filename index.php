@@ -2,6 +2,7 @@
 include('menubar.php');
 include "db.php";
 
+$LNAME = 'Apduhan';
 if(isset($_POST['ldata'])){//ログイン処理
 	$LNAME=$_POST['ldata'];
 	$sql = "SELECT * FROM ldevent WHERE LNAME='{$LNAME}'";
